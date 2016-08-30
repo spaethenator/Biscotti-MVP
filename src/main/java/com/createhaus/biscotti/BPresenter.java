@@ -12,6 +12,10 @@ public class BPresenter {
     protected Map<String, BModel> models = new HashMap<>();
     protected List<BError> errors = new ArrayList<>();
 
+    public BModel getModel(String name) {
+        return models.get(name);
+    }
+
     public void addView(String name, BView view) {
         views.put(name, view);
     }

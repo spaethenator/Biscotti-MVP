@@ -8,4 +8,5 @@ public interface BView {
     void error(List<BError> errors);
     void open();
     void compositeView(String name, Component view);
+    void update(BModel model);
 }
